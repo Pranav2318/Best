@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Best Friend Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+/* Floating Hearts */
+
+.hearts span{
+position:fixed;
+bottom:-50px;
+font-size:30px;
+animation:float 12s linear infinite;
+opacity:.7;
+z-index:0;
+}
+
+.hearts span:nth-child(1){left:10%;}
+.hearts span:nth-child(2){left:30%;animation-delay:2s;}
+.hearts span:nth-child(3){left:50%;animation-delay:4s;}
+.hearts span:nth-child(4){left:70%;animation-delay:6s;}
+.hearts span:nth-child(5){left:90%;animation-delay:8s;}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+
+section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:50px 20px;
+text-align:center;
+position:relative;
+z-index:1;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(
+-45deg,
+#ff006e,
+#8338ec,
+#3a86ff,
+#ff4d6d
+);
+
+background-size:400% 400%;
+animation:gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+text-shadow:0 0 20px rgba(255,255,255,.4);
+}
+
+.hero p{
+font-size:1.3rem;
+max-width:800px;
+line-height:1.8;
+}
+
+/* GALLERY */
+
+.gallery{
+background:#111827;
+}
+
+.gallery h2{
+font-size:3rem;
+margin-bottom:40px;
+}
+
+.gallery-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+width:100%;
+max-width:1200px;
+}
+
+.gallery-container img{
+width:100%;
+height:auto;
+max-height:500px;
+object-fit:contain;
+border-radius:20px;
+padding:8px;
+background:white;
+box-shadow:0 10px 30px rgba(255,255,255,.15);
+transition:.5s;
+transform:rotate(-2deg);
+}
+
+.gallery-container img:nth-child(even){
+transform:rotate(2deg);
+}
+
+.gallery-container img:hover{
+transform:scale(1.07) rotate(0deg);
+}
+
+/* MESSAGE */
+
+.message{
+background:linear-gradient(
+135deg,
+#7f5af0,
+#2cb67d
+);
+}
+
+.message h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.message p{
+max-width:850px;
+font-size:1.3rem;
+line-height:2;
+}
+
+/* REASONS */
+
+.reasons{
+background:#1e293b;
+}
+
+.reasons h2{
+font-size:3rem;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.2);
+padding:25px;
+border-radius:25px;
+width:250px;
+color:white;
+font-size:1.1rem;
+box-shadow:0 8px 32px rgba(0,0,0,.3);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* SURPRISE */
+
+.surprise{
+background:linear-gradient(
+135deg,
+#ff758c,
+#7f7fd5
+);
+}
+
+.surprise h2{
+font-size:3rem;
+}
+
+button{
+padding:15px 40px;
+margin-top:30px;
+border:none;
+border-radius:50px;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:
+0 0 20px white,
+0 0 40px pink;
+}
+
+#hidden{
+display:none;
+margin-top:30px;
+background:rgba(255,255,255,.15);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+max-width:700px;
+animation:fadeIn 1s ease;
+}
+
+#hidden h1{
+margin-bottom:15px;
+}
+
+#hidden p{
+line-height:1.8;
+font-size:1.2rem;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+footer{
+padding:20px;
+text-align:center;
+background:#0f172a;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+<span>❤️</span>
+<span>✨</span>
+<span>💖</span>
+<span>🌸</span>
+<span>❤️</span>
+</div>
+
+<section class="hero">
+
+<h1>❤️ Happy Best Friend Day ❤️</h1>
+
+<p>
+To my favorite person,
+thank you for always being there,
+making me laugh,
+and filling my life with happiness.
+Every memory with you is special ✨
+</p>
+
+</section>
+
+<section class="gallery">
+
+<h2>📸 Our Memories</h2>
+
+<div class="gallery-container">
+
+<img src="./photo1.jpeg" alt="">
+<img src="./photo2.jpeg" alt="">
+<img src="./photo3.jpeg" alt="">
+<img src="./photo4.jpeg" alt="">
+<img src="./photo5.jpeg" alt="">
+<img src="./photo6.jpeg" alt="">
+<img src="./photo7.jpeg" alt="">
+<img src="./photo8.jpeg" alt="">
+<img src="./photo9.jpeg" alt="">
+
+</div>
+
+</section>
+
+<section class="message">
+
+<h2>💌 A Message For You</h2>
+
+<p>
+
+Whenever my mind gets lost in thoughts or things start feeling overwhelming, you're the person who somehow knows how to bring me back to myself. ✨
+
+Your kindness, your patience, and the way you care about people make you truly special. 🌸
+
+I'm genuinely grateful for every conversation, every laugh, and every memory we've shared. Having you in my life is something I'll always appreciate. 🫶
+
+No matter where life takes us, I'll always be cheering for you, supporting you, and standing by your side whenever you need me. 🤗💖
+
+</p>
+
+</section>
+
+<div class="card">
+💖 You're one of a kind.
+</div>
+
+</div>
+
+</section>
+
+<section class="surprise">
+
+<h2>🎁 Final Surprise</h2>
+
+<button onclick="showSurprise()">
+Open Surprise
+</button>
+
+<div id="hidden">
+
+<h1>🌸 Forever Friends 🌸</h1>
+
+<p>
+Some friendships come and go,
+but ours became a memory in every photo,
+a laugh in every conversation,
+and a comfort in every difficult day.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+Made with ❤️ for my Best Friend
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script>
+
+function showSurprise(){
+
+document.getElementById("hidden").style.display="block";
+
+confetti({
+particleCount:250,
+spread:180,
+origin:{y:0.6}
+});
+
+}
+
+</script>
+
+</body>
+</html>
